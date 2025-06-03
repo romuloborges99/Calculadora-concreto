@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Concretagem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <aside class="sidebar">
+      <img src="logo.png.png" alt="Logo da Empresa" class="logo" />
+      <h2>CB Concreto</h2>
+      <p class="descricao-app">
+        Esta calculadora foi criada para ajudar você a estimar de forma simples e rápida a quantidade de concreto necessária para sua obra. Ideal para quem está planejando construir e quer ter mais controle dos custos e materiais.
+      </p>
+      <a
+        href="https://wa.me/5521986086209?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20c%C3%A1lculo%20de%20concretagem."
+        class="whatsapp-sidebar-small"
+        target="_blank"
+        title="Fale conosco pelo WhatsApp"
+      >
+        <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp" />
+      </a>
+    </aside>
+
+    <main class="main-content">
+      <section class="calculator-card">
+        <h1>Calculadora de Concretagem</h1>
+
+        <form id="formulario">
+          <div class="form-group">
+            <label for="largura">Largura (m)</label>
+            <input type="number" id="largura" step="0.01" required />
+          </div>
+          <div class="form-group">
+            <label for="comprimento">Comprimento (m)</label>
+            <input type="number" id="comprimento" step="0.01" required />
+          </div>
+          <div class="form-group">
+            <label for="espessura">Espessura da Laje (cm)</label>
+            <input type="number" id="espessura" step="0.1" required />
+          </div>
+          <div class="form-group">
+            <label for="tipoLaje">Tipo de Laje</label>
+            <select id="tipoLaje" required>
+              <option value="macica">Maciça</option>
+              <option value="nervurada">Nervurada</option>
+              <option value="isopor">Isopor</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="perda">Fator de perda (%)</label>
+            <input type="number" id="perda" value="5" step="0.1" />
+          </div>
+          <div class="form-group">
+            <label for="precoM3">Preço do concreto (R$ por m³)</label>
+            <input type="number" id="precoM3" step="0.01" placeholder="Ex: 450.00" />
+          </div>
+
+          <button type="submit" class="btn-primary">Calcular</button>
+        </form>
+
+        <div id="resultado" class="resultado"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+  <a
+  href="https://wa.me/5521986086209?text=Ol%C3%A1!%20Gostaria%20de%20informações%20sobre%20a%20Calculadora%20de%20Concretagem."
+  class="whatsapp-fixed"
+  target="_blank"
+>
+  <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
