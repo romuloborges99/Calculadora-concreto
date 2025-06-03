@@ -1,0 +1,188 @@
+:root {
+    --bg: #1e1f26;
+    --card: #2a2b38;
+    --accent: #0091ff;
+    --text: #ffffff;
+    --label: #cccccc;
+    --input-bg: #3a3b4c;
+    --success: #00cc88;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .app-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+  }
+  
+  .sidebar {
+    background-color: #111;
+    padding: 30px 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .sidebar .logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar h2 {
+    color: var(--accent);
+    font-size: 20px;
+  }
+  
+  .descricao-app {
+    font-size: 14px;
+    color: #bbbbbb;
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .calculator-card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 145, 255, 0.2);
+  }
+  
+  .calculator-card h1 {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--label);
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--input-bg);
+    border: none;
+    color: var(--text);
+    font-size: 16px;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: 2px solid var(--accent);
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0077cc;
+  }
+  
+  .resultado {
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--success);
+  }
+  
+  /* WhatsApp fixo no canto inferior para mobile */
+  .whatsapp-fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+  }
+  
+  .whatsapp-fixed img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    .app-wrapper {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      flex-direction: column;
+      width: 100%;
+      padding: 20px;
+      align-items: center;
+    }
+  
+    .main-content {
+      padding: 20px;
+    }
+  
+    .calculator-card {
+      padding: 20px;
+    }
+  
+    .calculator-card h1 {
+      font-size: 20px;
+    }
+  
+    label {
+      font-size: 14px;
+    }
+  
+    input,
+    select {
+      font-size: 15px;
+    }
+  
+    .btn-primary {
+      font-size: 15px;
+    }
+  }
+  
+ 
